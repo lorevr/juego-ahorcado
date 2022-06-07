@@ -9,32 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <!-- <header>
-        <img src="imagenes/logoAlura.png" alt="" class="logo">
+    <header>
         <p class="tituloJuego">JUEGO DEL AHORCADO</p>
-    </header> -->
+    </header>
     <main>
-        <!-- <section class="seccionInicio"> 
+        <img src="imagenes/logoAlura.png" alt="" class="logo">
+        
+        
+        <section class="seccionInicio"> 
             <button class="btnIniciarJuego">Iniciar juego</button>
             <button class="btnAgregarPalabra">Agregar nueva palabra</button>
-        </section> -->
+        </section>
         
+        <section class="seccionAgregarPalabra">
+            <input type="text">
+            <div>
+                <button class="btnAnadir">Añadir palabra</button>
+                <button class="btnRegresar">Regresar</button>
+            </div>
+        </section>
         
 
         <section class="seccionMuneco"> 
-            <img src="imagenes/logoAlura.png" alt="" class="logo">
-            <p class="tituloJuego">JUEGO DEL AHORCADO</p>
-            <canvas width="400" height="415" class="canvasMuneco"></canvas>
-            <canvas width="400" height="100" class="canvasGuiones"></canvas>
+            <canvas width="400" height="550" class="canvasMuneco"></canvas>
             <div>
                 <button class="btnNuevoJuego">Nuevo juego</button>
                 <button class="btnRendirse">Rendirse</button>
             </div>
-            <p class="msgGanaste"></p>
-            <p class="msgPerdiste"></p>
+            <div class="msgGanaste"></div>
+            <div class="msgPerdiste"></div>
+            
         </section>
     </main>
     

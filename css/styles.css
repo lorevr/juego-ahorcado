@@ -1,43 +1,41 @@
-/* body {
-    background-image: url('../imagenes/42811c0267c859c62da10fd68fa226be.jpg');
+body {
+    background-image: url('../imagenes/FondoPared.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin: auto;
-    max-width: 1200px;
-    height: 800px;
-} */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 
 header {
-    /* background-image: url('../imagenes/pergamino.png');
-    background-repeat: no-repeat;
-    background-size: 100% 95%;
-    display: grid;
-    grid-template-columns: 1fr 11fr;
-    margin: auto; */
-    /* max-width: 1200px;
-    height: 100px; */
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 70px;
+    justify-self: center;
 }
 
 .logo {
     position: absolute;
+    margin-top: 150px;
+    /* margin-left: 11%; */
+    margin-left: calc(50% - 39%);
     width: 40px;
-    margin: 140px 0 18px 12%;
 }
 
 .tituloJuego {
-    /* position: absolute; */
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
-    margin-top: 50px;
-    /* width: 400px; */
-    /* left: 35%; */
-
+    margin-top: 60px;
+    max-width: 50%;
+    margin: auto;
+    line-height: 40px;
 }
 
 main {
-    background-image: url('../imagenes/42811c0267c859c62da10fd68fa226be.jpg');
+    background-image: url('../imagenes/TablaConHojas.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: auto;
@@ -59,13 +57,14 @@ main {
     width: 317px;
     height: 114px;
 
-    background: #0A3871;
+    background: #db7e14;
     border-radius: 24px;
+    /* border: none; */
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
@@ -75,13 +74,14 @@ main {
     width: 300px;
     height: 70px;
 
-    background: transparent;
     border-radius: 24px;
+
+    background: #fbcb8d;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     text-align: center;
     color: #0A3871;
@@ -89,17 +89,17 @@ main {
 
 .seccionMuneco {
     display: grid;
-    grid-template-rows: 0.1fr 2fr 0.7fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    /* margin-top: 200px; */
     margin: 0 auto;
     position: relative;
-
 }
 
 .canvasMuneco {
-    margin: auto;
+    margin: 170px auto 30px auto;
     display: block;
 }
 
@@ -107,52 +107,24 @@ main {
     background-image: url('../imagenes/Excelente.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* margin: auto; */
-    max-width: 200px;
-    height: 200px;
+    max-width: 600px;
+    height: 300px;
     position: absolute;
-    /* margin-right: 25%; */
-    margin-top: 200px;
-    /* margin: auto; */
-    right: 40px;
-    /* justify-self: end; */
-    width: 220px;
-    padding: 10px;
-    /* text-align: center; */
-    justify-self: end;
-
-    /* font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 32px;
-    text-align: center;
-    color: #26f83e;
-    text-shadow: 2px 2px 5px black; */
+    width: 300px;
+    justify-self: center;
+    margin-top: 250px;
 }
 
 .msgPerdiste {
     background-image: url('../imagenes/Puedes-mejorar.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin: auto;
-    max-width: 150px;
-    height: 150px;
+    max-width: 600px;
+    height: 300px;
     position: absolute;
-    margin-right: 25%;
-    margin-top: 340px;
-    justify-self: end;
-    width: 220px;
-    padding: 10px;
-
-    /* font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 32px;
-    text-align: center;
-    color: #d93030;
-    text-shadow: 2px 2px 5px black; */
+    width: 300px;
+    justify-self: center;
+    margin-top: 250px;
 }
 
 .canvasGuiones {
@@ -165,8 +137,9 @@ main {
     height: 70px;
     margin: 0 20px;
 
-    background: #0A3871;
+    background: #db7e14;
     border-radius: 24px;
+    /* border: none; */
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -180,9 +153,10 @@ main {
 .btnRendirse {
     width: 300px;
     height: 70px;
-
-    background: transparent;
+    background: #fbcb8d;
+    /* opacity: 0.6; */
     border-radius: 24px;
+    /* border: none; */
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -194,20 +168,16 @@ main {
 }
 
 footer {
+    background-color: #ad5e1c;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2px 0;
-    margin: auto;
+    margin: 5px auto;
     max-width: 1200px;
+    height: 30px;
 }
 
-footer {
-    background-image: url('../imagenes/pergamino.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100% 95%;
-    margin: auto;
-    max-width: 1200px;
-    height: 50px;
-    padding: 7px 0;
+footer p {
+    margin: 3px;
+    color: #FFFFFF;
 }
