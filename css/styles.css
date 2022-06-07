@@ -1,0 +1,213 @@
+/* body {
+    background-image: url('../imagenes/42811c0267c859c62da10fd68fa226be.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    max-width: 1200px;
+    height: 800px;
+} */
+
+header {
+    /* background-image: url('../imagenes/pergamino.png');
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    margin: auto; */
+    /* max-width: 1200px;
+    height: 100px; */
+}
+
+.logo {
+    position: absolute;
+    width: 40px;
+    margin: 140px 0 18px 12%;
+}
+
+.tituloJuego {
+    /* position: absolute; */
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    /* width: 400px; */
+    /* left: 35%; */
+
+}
+
+main {
+    background-image: url('../imagenes/42811c0267c859c62da10fd68fa226be.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    max-width: 1200px;
+    height: 900px;
+}
+
+.seccionInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.btnIniciarJuego {
+    width: 317px;
+    height: 114px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btnAgregarPalabra {
+    width: 300px;
+    height: 70px;
+
+    background: transparent;
+    border-radius: 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #0A3871;
+}
+
+.seccionMuneco {
+    display: grid;
+    grid-template-rows: 0.1fr 2fr 0.7fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.canvasMuneco {
+    margin: auto;
+    display: block;
+}
+
+.msgGanaste {
+    background-image: url('../imagenes/Excelente.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* margin: auto; */
+    max-width: 200px;
+    height: 200px;
+    position: absolute;
+    /* margin-right: 25%; */
+    margin-top: 200px;
+    /* margin: auto; */
+    right: 40px;
+    /* justify-self: end; */
+    width: 220px;
+    padding: 10px;
+    /* text-align: center; */
+    justify-self: end;
+
+    /* font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    color: #26f83e;
+    text-shadow: 2px 2px 5px black; */
+}
+
+.msgPerdiste {
+    background-image: url('../imagenes/Puedes-mejorar.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    max-width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-right: 25%;
+    margin-top: 340px;
+    justify-self: end;
+    width: 220px;
+    padding: 10px;
+
+    /* font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    color: #d93030;
+    text-shadow: 2px 2px 5px black; */
+}
+
+.canvasGuiones {
+    margin: 0 auto;
+    display: block;
+}
+
+.btnNuevoJuego {
+    width: 300px;
+    height: 70px;
+    margin: 0 20px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btnRendirse {
+    width: 300px;
+    height: 70px;
+
+    background: transparent;
+    border-radius: 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #0A3871;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2px 0;
+    margin: auto;
+    max-width: 1200px;
+}
+
+footer {
+    background-image: url('../imagenes/pergamino.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 95%;
+    margin: auto;
+    max-width: 1200px;
+    height: 50px;
+    padding: 7px 0;
+}
