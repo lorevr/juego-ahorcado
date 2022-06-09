@@ -1,5 +1,6 @@
 var btnIniciarJuego = document.querySelector(".btnIniciarJuego");
 var btnAgregarPalabra = document.querySelector(".btnAgregarPalabra");
+var btnAnadir = document.querySelector(".btnAnadir");
 var btnRegresar = document.querySelector(".btnRegresar");
 var seccionInicio = document.querySelector(".seccionInicio");
 var seccionAgregarPalabra = document.querySelector(".seccionAgregarPalabra");
@@ -18,14 +19,23 @@ seccionInicio.style.display = "";
 btnIniciarJuego.addEventListener("click", () => {
     seccionInicio.style.display = "none";
     seccionMuneco.style.display = "";
+    tablero.clearRect(0 , 0, 400, 550);
+    stickerGanaste.style.display = "none";
+    stickerPerdiste.style.display = "none";
+    letras = [];
+    palabraCorrecta = [];
+    errores = 0;
+    dibujarGuiones(escogerPalabraSecreta());
 });
 
 btnAgregarPalabra.addEventListener("click", () => {
     seccionInicio.style.display = "none";
     seccionAgregarPalabra.style.display = "";
+    capturarPalabra.focus();
 });
 
 btnRegresar.addEventListener("click", () => {
+    capturarPalabra.value = "";
     seccionInicio.style.display = "";
     seccionAgregarPalabra.style.display = "none";
 });
@@ -33,6 +43,16 @@ btnRegresar.addEventListener("click", () => {
 botonRendirse.addEventListener("click", () => {
     seccionInicio.style.display = "";
     seccionMuneco.style.display = "none";
+});
+
+btnAnadir.addEventListener("click", function() {
+    let capturarPalabra = document.querySelector(".capturarPalabra");
+    let palabraNueva = capturarPalabra.value;
+    palabraNueva = palabraNueva.toUpperCase();
+    
+    palabras.push(palabraNueva);
+    capturarPalabra.value = "";
+    capturarPalabra.focus();
 });
 
 botonNuevoJuego.addEventListener("click", function() {
@@ -51,13 +71,21 @@ var letras = [];
 var palabraCorrecta = [];
 var palabraSecreta;
 var errores = 0;
-var saved_keydown = document.onkeydown;
+var palabrasGanadas = [];
 
 function escogerPalabraSecreta() {
     let palabra = palabras[Math.floor(Math.random() * palabras.length)];
-    palabraSecreta = palabra;
-    console.log(palabra);
-    return palabraSecreta;
+    if (palabrasGanadas.length >= palabras.length) {
+        palabrasGanadas = [];
+    }
+    if(palabrasGanadas.includes(palabra)) {
+        escogerPalabraSecreta();
+    } else {
+        palabraSecreta = palabra;
+        console.log(palabra);
+        console.log(palabrasGanadas);
+        return palabraSecreta;
+    }
 }
 
 function dibujarGuiones() {
@@ -75,8 +103,6 @@ function dibujarGuiones() {
     tablero.stroke();
     tablero.closePath();
 }
-
-dibujarGuiones(escogerPalabraSecreta());
 
 function escribirLetraCorrecta(index) {
     tablero.font = 'bold 42px Inter';
@@ -111,6 +137,7 @@ function verificarLetraClicada(key) {
 function adicionarLetraCorrecta( i, letra ) {
     palabraCorrecta[i] = letra.toUpperCase();
     if(palabraCorrecta.join("") == palabraSecreta) {
+        palabrasGanadas.push(palabraSecreta);
         stickerGanaste.style.display = "";
     }
 }
@@ -209,4 +236,5 @@ function dibujarMuneco(Linea) {
             break;
     }
 }
+
 
