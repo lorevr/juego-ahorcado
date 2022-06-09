@@ -1,5 +1,6 @@
 var btnIniciarJuego = document.querySelector(".btnIniciarJuego");
 var btnAgregarPalabra = document.querySelector(".btnAgregarPalabra");
+var capturarPalabra = document.querySelector(".capturarPalabra");
 var btnAnadir = document.querySelector(".btnAnadir");
 var btnRegresar = document.querySelector(".btnRegresar");
 var seccionInicio = document.querySelector(".seccionInicio");
@@ -36,8 +37,8 @@ btnAgregarPalabra.addEventListener("click", () => {
 
 btnRegresar.addEventListener("click", () => {
     capturarPalabra.value = "";
-    seccionInicio.style.display = "";
     seccionAgregarPalabra.style.display = "none";
+    seccionInicio.style.display = "";
 });
 
 botonRendirse.addEventListener("click", () => {
@@ -46,10 +47,9 @@ botonRendirse.addEventListener("click", () => {
 });
 
 btnAnadir.addEventListener("click", function() {
-    let capturarPalabra = document.querySelector(".capturarPalabra");
     let palabraNueva = capturarPalabra.value;
     palabraNueva = palabraNueva.toUpperCase();
-    
+
     palabras.push(palabraNueva);
     capturarPalabra.value = "";
     capturarPalabra.focus();
