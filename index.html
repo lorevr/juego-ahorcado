@@ -28,7 +28,8 @@
         </section>
         
         <section class="seccionAgregarPalabra">
-            <input type="text">
+            <input type="text" class="capturarPalabra" maxlength="10" placeholder="Ingresa una palabra">
+            <span>&#x1F6C8 Sólo caracteres, máximo 10 caracteres</span>
             <div>
                 <button class="btnAnadir">Añadir palabra</button>
                 <button class="btnRegresar">Regresar</button>
@@ -38,7 +39,7 @@
 
         <section class="seccionMuneco"> 
             <canvas width="400" height="550" class="canvasMuneco"></canvas>
-            <div>
+            <div class="divBtnNuevoRendirse">
                 <button class="btnNuevoJuego">Nuevo juego</button>
                 <button class="btnRendirse">Rendirse</button>
             </div>
@@ -49,9 +50,8 @@
     </main>
     
     <footer>
-            <p>Derechos reservados</p>  
-            <p>Lorena Valencia Ruiz</p>
-            <p>Challenge 2</p>
+        <p class="pieCopyright">Todos los derechos reservados Lorena Valencia Ruiz &copy 2022</p>
+        <p class="textoPieChallenge">Challenge 2</p>
     </footer>
 
     <script src="js/script.js"></script>
