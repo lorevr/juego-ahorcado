@@ -62,7 +62,8 @@ main {
 }
 
 .capturarPalabra {
-    width: 350px;
+    width: 70%;
+    max-width: 350px;
     height: 40px;
     border-radius: 5px;
     border: #ad5e1c solid 3px;
@@ -238,6 +239,7 @@ footer {
     margin: 5px auto;
     max-width: 1200px;
     height: 30px;
+    align-items: center;
 }
 
 footer p {
@@ -261,13 +263,62 @@ footer p {
 }
 
 @media screen and ( max-width: 600px ) {
+    header {
+        margin-top: 60px;
+    }
+
+    main {
+        height: 750px;
+    }
+
     .tituloJuego {
         font-size: 30px;
+        line-height: 1;
+    }
+
+    .logo {
+        width: 30px;
+    }
+
+    .capturarPalabra {
+        font-size: 1rem;
+    }
+
+    .seccionAgregar-botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btnIniciarJuego {
+        width: 60%;
+        height: 80px;
+        border-radius: 18px;
+        font-size: 1.2rem;
+    }
+    
+    .btnAgregarPalabra {
+        width: 60%;
+        height: 70px;
+        border-radius: 18px;
+        font-size: 1.2rem;
     }
 
     .canvasMuneco {
-        width: 300px;
-        height: 450px;
+        width: 250px;
+        height: 350px;
+        margin: 140px auto 10px auto;
+    }
+
+    .msgGanaste{
+        width: 200px;
+        height: 200px;
+    }
+
+    .msgPerdiste{
+        width: 200px;
+        height: 200px;
     }
 
     .divBtnNuevoRendirse {
@@ -275,5 +326,69 @@ footer p {
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         gap: 15px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        height: 40px;
+    }
+}
+
+@media screen and ( max-width: 360px ) {
+    header {
+        margin-top: 50px;
+    }
+
+    .tituloJuego {
+        font-size: 25px;
+        line-height: 1;
+    }
+
+    main {
+        height: 650px;
+    }
+
+    .logo {
+        width: 20px;
+    }
+
+    .seccionMuneco {
+        grid-template-rows: 1fr 0.2fr 0.5fr;
+    }
+
+    .canvasMuneco {
+        width: 200px;
+        height: 300px;
+    }
+
+    .btnNuevoJuego, .btnAnadir {
+        width: 150px;
+        height: 50px;
+        border-radius: 14px;
+        font-size: 1rem;
+    }
+
+    .btnRendirse, .btnRegresar {
+        width: 150px;
+        height: 50px;
+        border-radius: 14px;
+        font-size: 1rem;
+    }
+
+    .divBtnNuevoRendirse {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        gap: 15px;
+    }
+
+    .msgGanaste{
+        width: 150px;
+        height: 150px;
+    }
+
+    .msgPerdiste{
+        width: 150px;
+        height: 150px;
     }
 }

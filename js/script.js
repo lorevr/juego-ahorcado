@@ -63,6 +63,7 @@ botonNuevoJuego.addEventListener("click", function() {
     letras = [];
     palabraCorrecta = [];
     errores = 0;
+    tablero.focus();
 });
 
 let palabras = ['PROGRAMA', 'JAVASCRIPT', 'LENGUAJE', 'GITHUB', 'CODIGO', 'WEB', 'LOGICA', 'TECNOLOGIA', 'CHALLENGE', 'DESARROLLO'];
